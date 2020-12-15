@@ -1,30 +1,20 @@
 <template>
-  <p>My name is {{ name }}</p>
-  <p>I am {{ age }} yr old</p>
+  <div> My name is {{ name }} </div>
+  <div> I am {{ designation }} </div>
+  <div v-text="technologies"> </div>
 </template>
 
 <script>
 
-  export default {
+  export default{
     name: "App",
     data(){
       return{
-        name: "Shubham",
-        age: 12,
-      }; 
+        name: "Shubham Rajput",
+        designation: "Software Engineer",
+        technologies: 'Ruby on Rails',
+      };
     },
   };
 
 </script>
-
-
-<style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-</style>
