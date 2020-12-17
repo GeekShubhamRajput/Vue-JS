@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './BindText.vue'
+import App from './BindAttribute.vue'
 
 createApp(App).mount('#app')
