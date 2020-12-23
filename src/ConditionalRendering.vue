@@ -3,10 +3,11 @@
   <p v-else-if="num > 0">Number is Positive</p>
   <p v-else-if="num < 0">Number is Negative</p>
   <p v-else>This is not a number</p>
+  <p v-if="display">My name is Shubham Rajput</p>
+  
+  <p v-if="isDisplay">Displaying this element using v-if redirective</p>
+  <p v-show="isDisplay">Displaying this element using v-show redirective</p>
 
-  <div v-if="display">
-    <p>My name is Shubham Rajput</p>
-  </div>
 </template>
 
 <script>
@@ -15,6 +16,7 @@
       return{
         num: 1,
         display: true,
+        isDisplay: false,
       }
     }
   }
