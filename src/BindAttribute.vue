@@ -28,7 +28,4 @@
     color: green;
     text-align: center;
   }
-  .boldText{
-    font-weight: bold;
-  }
 </style>
