@@ -1,6 +1,6 @@
 <template>
   <p v-for="(name, index) in names" :key="name">{{ index + 1 }} {{ name }}</p>
-  
+
   <div class="fullName">
     <p v-for="fullName in fullNames" :key="fullName">{{ fullName.first }} {{ fullName.last }}</p>
   </div>
@@ -9,7 +9,7 @@
     <h1> {{ cricketer.country }} </h1>
     <h3 v-for="player in cricketer.players" :key="player"> {{ player }} </h3>
   </div>
-  
+
   <div class="myInfo">
     <p v-for="(value, key) in myInfo" :key="value"> {{ key }} : {{ value }} </p>
   </div>
