@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './ListWithKey.vue'
+import App from './ConditionalListRendering.vue'
 
 createApp(App).mount('#app')
