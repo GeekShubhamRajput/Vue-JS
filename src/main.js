@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './ComputedPropertyVsMethod.vue'
+import App from './Program4.vue'
 
 createApp(App).mount('#app')
