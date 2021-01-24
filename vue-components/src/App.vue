@@ -1,14 +1,23 @@
 <template>
-  <Greet />
+  <Greet1 name="Abhishek" heroName="Batman" />
+  <Greet1 name="Kartik" heroName="Superman" />
+  <Greet1 name="Sona" heroName="Wonder Woman" />
+  <Greet1 :name="name" :heroName="desig" />
 </template>
 
 <script>
-  import Greet from './components/Greet.vue'
+  import Greet1 from './components/Greet1'
 
   export default {
     name: 'App',
     components: {
-      Greet,
+      Greet1,
+    },
+    data(){
+      return{
+        name: 'Shreya',
+        desig: 'Doctor' 
+      }
     }
   }
 </script>
