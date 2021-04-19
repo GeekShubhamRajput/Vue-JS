@@ -8,4 +8,3 @@
     props: ['name', 'heroName']
   };
 </script>
-

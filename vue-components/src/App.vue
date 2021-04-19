@@ -3,15 +3,18 @@
   <Greet1 name="Kartik" heroName="Superman" />
   <Greet1 name="Sona" heroName="Wonder Woman" />
   <Greet1 :name="name" :heroName="desig" />
+
+  <Greetings />
 </template>
 
 <script>
   import Greet1 from './components/Greet1'
+  import Greetings from './components/Greetings'
 
   export default {
     name: 'App',
     components: {
-      Greet1,
+      Greet1, Greetings,
     },
     data(){
       return{
