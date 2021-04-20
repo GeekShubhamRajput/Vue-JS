@@ -1,5 +1,8 @@
 # vue-components
 
+## About
+ This repo belongs to my Vue Js learning. It contains basic concepts of Vue like Components, component props.
+
 ## Project setup
 ```
 yarn install
