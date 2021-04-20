@@ -1,25 +1,19 @@
 <template>
-  <Greet1 name="Abhishek" heroName="Batman" />
-  <Greet1 name="Kartik" heroName="Superman" />
-  <Greet1 name="Sona" heroName="Wonder Woman" />
-  <Greet1 :name="name" :heroName="desig" />
+  <h1>Prop types and Validations</h1>
 
-  <Greetings />
+  <Article title="My Article" :likes="2" :isPublished="true" />
 </template>
 
 <script>
-  import Greet1 from './components/Greet1'
-  import Greetings from './components/Greetings'
+  import Article from './components/Article'
 
   export default {
     name: 'App',
     components: {
-      Greet1, Greetings,
+      Article,
     },
     data(){
       return{
-        name: 'Shreya',
-        desig: 'Doctor' 
       }
     }
   }
