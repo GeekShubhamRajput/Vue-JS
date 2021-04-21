@@ -1,16 +1,16 @@
 <template>
-  <h1>Prop types and Validations</h1>
+  <h1>Non Prop Attributes</h1>
 
-  <Article title="My Article" :likes="2" :isPublished="true" />
+  <Article1 id="my-article" title="My Article" :likes="2" :isPublished="true" />
 </template>
 
 <script>
-  import Article from './components/Article'
+  import Article1 from './components/Article1'
 
   export default {
     name: 'App',
     components: {
-      Article,
+      Article1,
     },
     data(){
       return{
