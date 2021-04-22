@@ -1,28 +1,26 @@
 <template>
-  <h1>Custom Component Event</h1>
-  
-  <button @click="showPopup = true">Show Popup</button>
-  <Popup v-show="showPopup" @close="closePopup"/>
+  <h1>Provide and Inject</h1>
+  <h2> App component username - {{ name}} </h2> 
+  <ComponentA />
 </template>
 
 <script>
-  import Popup from './components/Popup'
+  import ComponentA from './components/ComponentA'
 
-  export default{
+  export default {
     name: 'App',
     components: {
-      Popup,
+      ComponentA,
     },
     data(){
       return{
-        showPopup: false,
+        name: 'Shubham Rajput',
       }
     },
-    methods: {
-      closePopup(name){
-        this.showPopup = false
-        console.log('name', name)
-      }
+    provide(){
+      return{
+        username: this.name,
+      } 
     }
   }
 </script>
