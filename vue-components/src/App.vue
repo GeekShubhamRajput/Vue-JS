@@ -1,20 +1,26 @@
 <template>
-  <h1>Non Prop Attributes</h1>
-
-  <Article1 id="my-article" title="My Article" :likes="2" :isPublished="true" />
+  <h1>Provide and Inject</h1>
+  <h2> App component username - {{ name}} </h2> 
+  <ComponentA />
 </template>
 
 <script>
-  import Article1 from './components/Article1'
+  import ComponentA from './components/ComponentA'
 
   export default {
     name: 'App',
     components: {
-      Article1,
+      ComponentA,
     },
     data(){
       return{
+        name: 'Shubham Rajput',
       }
+    },
+    provide(){
+      return{
+        username: this.name,
+      } 
     }
   }
 </script>
