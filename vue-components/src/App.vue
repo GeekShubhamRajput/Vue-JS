@@ -1,17 +1,17 @@
 <template>
-  <h1>Custom Component Event</h1>
+  <h1>Validating Emitted Events</h1>
   
   <button @click="showPopup = true">Show Popup</button>
-  <Popup v-show="showPopup" @close="closePopup"/>
+  <Popup1 v-show="showPopup" @close="closePopup"/>
 </template>
 
 <script>
-  import Popup from './components/Popup'
+  import Popup1 from './components/Popup1'
 
   export default{
     name: 'App',
     components: {
-      Popup,
+      Popup1,
     },
     data(){
       return{
