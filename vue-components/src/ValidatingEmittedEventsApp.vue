@@ -1,20 +1,27 @@
 <template>
-  <h1>Components and v-model</h1>
-
-  <Input v-model="name" />
+  <h1>Validating Emitted Events</h1>
+  
+  <button @click="showPopup = true">Show Popup</button>
+  <Popup1 v-show="showPopup" @close="closePopup"/>
 </template>
 
 <script>
-  import Input from './components/Input'
+  import Popup1 from './components/Popup1'
 
   export default{
     name: 'App',
     components: {
-      Input,
+      Popup1,
     },
     data(){
       return{
-        name: '',
+        showPopup: false,
+      }
+    },
+    methods: {
+      closePopup(name){
+        this.showPopup = false
+        console.log('name', name)
       }
     }
   }
