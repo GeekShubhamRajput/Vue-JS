@@ -1,21 +1,30 @@
 <template>
-  <h1>Slots and Default Slots</h1>
+  <h1>Named Slots</h1>
   
-  <Card></Card>
-  <Card> Card Content</Card>
-  <Card><b>Card Content</b></Card>
-  <Card><img src="https://picsum.photos/200"></Card>
+  <Card1>
+    <template v-slot:header>
+      <h2>Header</h2>
+    </template>
+    
+    <template v-slot:default>
+      <p>Content</p>
+      <img src="https://picsum.photos/200" />
+    </template>
+
+    <template v-slot:footer>
+      <h3>Footer section</h3>
+    </template>
+  </Card1>
+
 </template>
 
 <script>
-  import Card from './components/Card.vue'
+  import Card1 from './components/Card1.vue'
 
   export default{
     name: 'App',
     components: {
-      Card,
-    },
-    methods: {
+      Card1,
     }
   }
 </script>
