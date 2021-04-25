@@ -1,30 +1,26 @@
 <template>
-  <h1>Named Slots</h1>
-  
-  <Card1>
-    <template v-slot:header>
-      <h2>Header</h2>
-    </template>
-    
-    <template v-slot:default>
-      <p>Content</p>
-      <img src="https://picsum.photos/200" />
-    </template>
+  <h1>Slots Props</h1>
 
-    <template v-slot:footer>
-      <h3>Footer section</h3>
-    </template>
-  </Card1>
-
+  <NameList v-slot:default="slotProps">
+    <h2>{{ slotProps.firstName}}</h2>
+  </NameList>
+  <hr>
+  <NameList v-slot:default="slotProps">
+    <h2>{{ slotProps.firstName}} {{ slotProps.lastName}}</h2>
+  </NameList>
+  <hr>
+  <NameList v-slot:default="slotProps">
+    <h2>{{ slotProps.lastName}}, {{ slotProps.firstName}} </h2>
+  </NameList>
 </template>
 
 <script>
-  import Card1 from './components/Card1.vue'
+  import NameList from './components/NameList.vue'
 
   export default{
-    name: 'App',
+    name: "App",
     components: {
-      Card1,
+      NameList,
     }
   }
 </script>
