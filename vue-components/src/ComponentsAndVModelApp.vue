@@ -1,21 +1,21 @@
 <template>
-  <h1>Slots and Default Slots</h1>
-  
-  <Card></Card>
-  <Card> Card Content</Card>
-  <Card><b>Card Content</b></Card>
-  <Card><img src="https://picsum.photos/200"></Card>
+  <h1>Components and v-model</h1>
+
+  <Input v-model="name" />
 </template>
 
 <script>
-  import Card from './components/Card.vue'
+  import Input from './components/Input.vue'
 
   export default{
     name: 'App',
     components: {
-      Card,
+      Input,
     },
-    methods: {
+    data(){
+      return{
+        name: '',
+      }
     }
   }
 </script>

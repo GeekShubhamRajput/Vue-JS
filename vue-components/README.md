@@ -1,7 +1,7 @@
 # vue-components
 
 ## About
- This repo belongs to my Vue Js learning. It contains basic concepts of Vue like Components, component props, Prop Types and Validations, Non-prop attirbutes, Provide and Inject, Custom Component Events, Validating Emitted Events, Components and v-model.
+ This repo belongs to my Vue Js learning. It contains basic concepts of Vue like Components, component props, Prop Types and Validations, Non-prop attirbutes, Provide and Inject, Custom Component Events, Validating Emitted Events, Components and v-model, Slots and default slots, Named slots, Slots props.
 
 ## Project setup
 ```
