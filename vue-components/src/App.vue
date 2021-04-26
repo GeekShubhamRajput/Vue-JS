@@ -1,27 +1,20 @@
 <template>
-  <h1>Slots Props</h1>
+  <h1>Component Style</h1>
 
-  <NameList v-slot:default="slotProps">
-    <h2>{{ slotProps.firstName}}</h2>
-  </NameList>
-  <hr>
-  <NameList v-slot:default="slotProps">
-    <h2>{{ slotProps.firstName}} {{ slotProps.lastName}}</h2>
-  </NameList>
-  <hr>
-  <NameList v-slot:default="slotProps">
-    <h2>{{ slotProps.lastName}}, {{ slotProps.firstName}} </h2>
-  </NameList>
+  <h4>App component text</h4>
+  <ComponentStyles>
+    <h4>Hello Shubham</h4>
+  </ComponentStyles>
 </template>
 
 <script>
-  import NameList from './components/NameList.vue'
+  import ComponentStyles from "./components/ComponentStyles.vue"
 
   export default{
-    name: "App",
+    name: 'App',
     components: {
-      NameList,
-    }
+      ComponentStyles,
+    } 
   }
 </script>
 
@@ -33,5 +26,8 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+  h4{
+    color: orange;
   }
 </style>
