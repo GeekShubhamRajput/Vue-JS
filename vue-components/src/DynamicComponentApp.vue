@@ -1,13 +1,11 @@
 <template>
-  <h1>Keeping Dynamic Components Alive</h1>
-  
-  <button @click="activeTab='TabA'">TabA</button>
-  <button @click="activeTab='TabB'">TabB</button>
-  <button @click="activeTab='TabC'">TabC</button>
+  <h1>Dynamic Components</h1>
 
-  <keep-alive>
-    <component :is="activeTab" />
-  </keep-alive>  
+  <button @click="activeTab = 'TabA'">Tab A</button>
+  <button @click="activeTab = 'TabB'">Tab B</button>
+  <button @click="activeTab = 'TabC'">Tab C</button>
+
+  <component :is="activeTab" />
 </template>
 
 <script>
@@ -16,7 +14,6 @@
   import TabC from './components/TabC'
 
   export default{
-    name: 'App',
     components: {
       TabA, TabB, TabC,
     },
