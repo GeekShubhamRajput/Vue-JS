@@ -1,20 +1,27 @@
 <template>
-  <h1>Component Style</h1>
+  <h1>Dynamic Components</h1>
 
-  <h4>App component text</h4>
-  <ComponentStyles>
-    <h4>Hello Shubham</h4>
-  </ComponentStyles>
+  <button @click="activeTab = 'TabA'">Tab A</button>
+  <button @click="activeTab = 'TabB'">Tab B</button>
+  <button @click="activeTab = 'TabC'">Tab C</button>
+
+  <component :is="activeTab" />
 </template>
 
 <script>
-  import ComponentStyles from "./components/ComponentStyles.vue"
+  import TabA from './components/TabA'
+  import TabB from './components/TabB'
+  import TabC from './components/TabC'
 
   export default{
-    name: 'App',
     components: {
-      ComponentStyles,
-    } 
+      TabA, TabB, TabC,
+    },
+    data(){
+      return{
+        activeTab: 'TabA',
+      }
+    }
   }
 </script>
 
@@ -26,8 +33,5 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
-  }
-  h4{
-    color: orange;
   }
 </style>
