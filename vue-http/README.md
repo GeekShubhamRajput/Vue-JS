@@ -1,7 +1,7 @@
 # vue-http
 
 ## About
- This repo belongs to my Vue Js learning.
+ This repo belongs to my Vue Js learning. It includes HTTP GET Request, HTTP POST Request.
 
 
 ## Project setup

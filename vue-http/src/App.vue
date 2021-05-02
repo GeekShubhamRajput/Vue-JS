@@ -1,15 +1,15 @@
 <template>
-  <h1>HTTP GET Request</h1>
-  <PostList />
+  <h1>HTTP POST Request</h1>
+  <CreatePost />
 </template>
 
 <script>
-  import PostList from './components/PostList.vue'
+  import CreatePost from './components/CreatePost.vue'
 
   export default {
     name: 'App',
     components: {
-      PostList,
+      CreatePost,
     }
   }
 </script>
