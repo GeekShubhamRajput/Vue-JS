@@ -1,7 +1,8 @@
 # vue-http
 
 ## About
- This repo belongs to my Vue Js learning. It includes HTTP GET Request, HTTP POST Request.
+ This repo belongs to my Vue Js learning. It includes HTTP GET Request, HTTP POST Request, Component Lifecycle hooks,
+ GET Request on Page Load.
 
 
 ## Project setup

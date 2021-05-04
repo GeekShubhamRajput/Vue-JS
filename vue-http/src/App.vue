@@ -1,15 +1,15 @@
 <template>
   <h1>HTTP POST Request</h1>
-  <CreatePost />
+  <MyBook />
 </template>
 
 <script>
-  import CreatePost from './components/CreatePost.vue'
+  import MyBook from './components/MyBook.vue'
 
   export default {
     name: 'App',
     components: {
-      CreatePost,
+      MyBook,
     }
   }
 </script>
