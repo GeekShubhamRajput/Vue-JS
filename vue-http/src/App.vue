@@ -1,15 +1,15 @@
 <template>
-  <h1>HTTP POST Request</h1>
-  <MyBook />
+  <h1>GET Request on Page Load</h1>
+  <PostIndex />
 </template>
 
 <script>
-  import MyBook from './components/MyBook.vue'
+  import PostIndex from './components/PostIndex.vue'
 
   export default {
     name: 'App',
     components: {
-      MyBook,
+      PostIndex,
     }
   }
 </script>
