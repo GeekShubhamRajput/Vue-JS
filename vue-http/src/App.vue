@@ -1,15 +1,15 @@
 <template>
-  <h1>GET Request on Page Load</h1>
-  <PostIndex />
+  <h1>Template Refs</h1>
+  <TemplateRef />
 </template>
 
 <script>
-  import PostIndex from './components/PostIndex.vue'
+  import TemplateRef from './components/TemplateRef.vue'
 
   export default {
     name: 'App',
     components: {
-      PostIndex,
+      TemplateRef,
     }
   }
 </script>
