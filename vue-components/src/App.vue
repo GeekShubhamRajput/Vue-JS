@@ -1,33 +1,21 @@
 <template>
-  <h2>Teleport Component</h2>
-
-  <teleport to="#teleported">
-    <TeleportComponent />
-  </teleport>
+  <h1>Reusability with Mixins</h1>
+  <ClickCounter />
+  <HoverCounter />
 </template>
 
 <script>
-  import TeleportComponent from './components/TeleportComponent'
+  import HoverCounter from './components/HoverCounter.vue'
+  import ClickCounter from './components/ClickCounter.vue'
 
   export default{
     name: 'App',
     components: {
-      TeleportComponent,
-    },
-    data(){
-      return{
-      }
+      ClickCounter,
+      HoverCounter,
     }
   }
 </script>
 
 <style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
 </style>
